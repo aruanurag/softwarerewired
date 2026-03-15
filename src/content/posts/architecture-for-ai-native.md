@@ -1,6 +1,6 @@
 ---
 title: "Architecture for AI-Native Products"
-date: "2026-04-02"
+date: "2026-03-15"
 author: "Software Rewired"
 tags: ["AI", "Software Architecture", "AI Platforms"]
 summary: "Designing systems that can learn, reason, and still remain reliable."
