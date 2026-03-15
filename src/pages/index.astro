@@ -10,12 +10,37 @@ const recent = posts.slice(0, 6);
 ---
 <BaseLayout>
   <section class="hero">
-    <h1>Software Rewired</h1>
-    <p>Exploring how AI is transforming SaaS and modern software.</p>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Software Rewired</p>
+      <h1>Exploring how AI is transforming SaaS and modern software.</h1>
+      <p class="lead">
+        Strategy, architecture, and product thinking for teams building AI-native
+        applications that scale with trust.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="/posts">Read the latest</a>
+        <a class="btn ghost" href="/about">About the blog</a>
+      </div>
+    </div>
+    <div class="hero-card reveal">
+      <div class="hero-card-inner">
+        <p class="meta">Featured</p>
+        <h3><a href={`/posts/${recent[0].slug}/`}>{recent[0].data.title}</a></h3>
+        <p>{recent[0].data.summary}</p>
+        <div class="tag-list">
+          {recent[0].data.tags.map((tag) => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2 class="section-title">Recent Posts</h2>
+  <section class="reveal">
+    <div class="section-head">
+      <h2 class="section-title">Recent Posts</h2>
+      <a class="section-link" href="/posts">View all</a>
+    </div>
     <div class="post-grid">
       {recent.map((post) => (
         <PostCard post={post} />
