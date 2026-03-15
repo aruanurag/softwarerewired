@@ -1,0 +1,51 @@
+---
+const { title, description } = Astro.props;
+const siteTitle = title ? `${title} | Software Rewired` : "Software Rewired";
+const siteDescription = description ?? "Exploring how AI is transforming SaaS and modern software.";
+const url = Astro.url;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{siteTitle}</title>
+    <meta name="description" content={siteDescription} />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={siteDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url.toString()} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="alternate" type="application/rss+xml" title="Software Rewired RSS" href="/rss.xml" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;600&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="/" aria-label="Software Rewired">Software Rewired</a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/posts">Posts</a>
+          <a href="/tags">Tags</a>
+          <a href="/about">About</a>
+        </nav>
+      </div>
+    </header>
+    <main class="layout">
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div>Software Rewired. Focused on AI-native SaaS, architecture, and the future of software.</div>
+      </div>
+    </footer>
+  </body>
+</html>
+<style>
+  @import "../styles/global.css";
+</style>

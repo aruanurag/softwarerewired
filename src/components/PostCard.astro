@@ -1,0 +1,15 @@
+---
+const { post } = Astro.props;
+const slug = post.slug;
+const { title, summary, date, tags } = post.data;
+---
+<article class="card">
+  <p class="meta">{date}</p>
+  <h3><a href={`/posts/${slug}/`}>{title}</a></h3>
+  <p>{summary}</p>
+  <div class="tag-list">
+    {tags.map((tag) => (
+      <a class="tag" href={`/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`}>{tag}</a>
+    ))}
+  </div>
+</article>

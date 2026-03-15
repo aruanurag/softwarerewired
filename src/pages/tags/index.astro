@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("posts");
+const tagMap = new Map();
+for (const post of posts) {
+  for (const tag of post.data.tags) {
+    const key = tag.toLowerCase().replace(/\s+/g, "-");
+    tagMap.set(key, { label: tag, count: (tagMap.get(key)?.count ?? 0) + 1 });
+  }
+}
+const tags = Array.from(tagMap.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+---
+<BaseLayout title="Tags" description="Browse posts by topic.">
+  <h1 class="section-title">Tags</h1>
+  <div class="post-grid">
+    {tags.map(([slug, info]) => (
+      <article class="card">
+        <h3><a href={`/tags/${slug}/`}>{info.label}</a></h3>
+        <p class="meta">{info.count} posts</p>
+      </article>
+    ))}
+  </div>
+</BaseLayout>

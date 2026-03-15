@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts")).sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+);
+---
+<BaseLayout title="Posts" description="All posts from Software Rewired.">
+  <h1 class="section-title">All Posts</h1>
+  <div class="post-grid">
+    {posts.map((post) => (
+      <PostCard post={post} />
+    ))}
+  </div>
+</BaseLayout>
