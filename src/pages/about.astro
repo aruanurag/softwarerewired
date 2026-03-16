@@ -1,16 +1,57 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="About" description="About Software Rewired.">
-  <section class="prose">
-    <h1>About Software Rewired</h1>
-    <p>
-      Software Rewired is a minimal blog exploring how AI is reshaping SaaS, software
-      architecture, and the product decisions that define modern applications.
-    </p>
-    <p>
-      Expect essays on agentic systems, platform strategy, and the design patterns
-      that help teams ship intelligent software without losing reliability or clarity.
-    </p>
+<BaseLayout title="About" description="About the editor behind Software Rewired.">
+  <section class="about-grid">
+    <div class="about-card reveal">
+      <div class="about-photo">
+        <img src="/about-portrait.svg" alt="Portrait illustration" loading="lazy" />
+      </div>
+      <div class="about-meta">
+        <p class="eyebrow">About Me</p>
+        <h1>Hi, I’m Anurag Mohan.</h1>
+        <p class="lead">
+          Software Rewired is about how modern technologies — especially AI —
+          are reshaping software and the way we build, operate, and experience it.
+        </p>
+        <div class="about-tags">
+          <span class="tag">AI-First Software</span>
+          <span class="tag">Cloud Architecture</span>
+          <span class="tag">Platform Strategy</span>
+          <span class="tag">Systems Design</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-panel reveal">
+      <div class="panel-inner">
+        <h2>What I Focus On</h2>
+        <p>
+          My focus is how software gets rewired by the technologies shaping the next
+          era — especially AI-first approaches that change the software stack, the
+          architecture patterns we rely on, and the influence software has on people.
+        </p>
+        <p>
+          I started as a Windows developer, moved into web programming, and then
+          deepened into DevOps, cloud architecture, containers, Kubernetes, and AI.
+          I’ve worked across AWS, Azure, and OCI, and I’ve partnered with tens of
+          customers while reviewing hundreds of architecture patterns.
+        </p>
+
+        <h3>What You’ll Find Here</h3>
+        <ul class="about-list">
+          <li>How AI changes software architecture — not just features.</li>
+          <li>Patterns for reliability, cost control, and scale.</li>
+          <li>Strategy for preparing teams and platforms for the AI wave.</li>
+        </ul>
+
+        <h3>Why I Write</h3>
+        <p>
+          The goal is to make the next generation of software more intentional. I’ll
+          share the patterns that worked, the ones that broke, and the decisions that
+          matter when you’re rewiring a stack for AI.
+        </p>
+      </div>
+    </div>
   </section>
 </BaseLayout>
