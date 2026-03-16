@@ -141,23 +141,9 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"posts": {
-"agentic-gtm.md": {
-	id: "agentic-gtm.md";
-  slug: "agentic-gtm";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"ai-vs-saas.md": {
-	id: "ai-vs-saas.md";
-  slug: "ai-vs-saas";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"architecture-for-ai-native.md": {
-	id: "architecture-for-ai-native.md";
-  slug: "architecture-for-ai-native";
+"serverless-costs.md": {
+	id: "serverless-costs.md";
+  slug: "serverless-costs";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
