@@ -3,28 +3,32 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="About" description="About the editor behind Software Rewired.">
   <section class="about-grid">
-    <div class="about-card reveal">
-      <div class="about-photo">
-        <img src="/about-portrait.svg" alt="Portrait illustration" loading="lazy" />
-      </div>
-      <div class="about-meta">
-        <p class="eyebrow">About Me</p>
-        <h1>Hi, I’m Anurag Mohan.</h1>
-        <p class="lead">
-          Software Rewired is about how modern technologies — especially AI —
-          are reshaping software and the way we build, operate, and experience it.
-        </p>
-        <div class="about-tags">
-          <span class="tag">AI-First Software</span>
-          <span class="tag">Cloud Architecture</span>
-          <span class="tag">Platform Strategy</span>
-          <span class="tag">Systems Design</span>
-        </div>
-      </div>
-    </div>
-
     <div class="about-panel reveal">
       <div class="panel-inner">
+        <div class="about-hero">
+          <div class="about-headline">
+            <div class="about-photo">
+              <img src="/about-portrait.svg" alt="Portrait illustration" loading="lazy" width="160" height="160" />
+            </div>
+            <div>
+              <p class="eyebrow">About Me</p>
+              <h1>Hi, I’m Anurag Mohan.</h1>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="lead">
+              Software Rewired is about how modern technologies — especially AI —
+              are reshaping software and the way we build, operate, and experience it.
+            </p>
+            <div class="about-tags">
+              <span class="tag">AI-First Software</span>
+              <span class="tag">Cloud Architecture</span>
+              <span class="tag">Platform Strategy</span>
+              <span class="tag">Systems Design</span>
+            </div>
+          </div>
+        </div>
+
         <h2>What I Focus On</h2>
         <p>
           My focus is how software gets rewired by the technologies shaping the next
