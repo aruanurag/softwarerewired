@@ -15,9 +15,11 @@ const url = Astro.url;
     <meta property="og:description" content={siteDescription} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={url.toString()} />
+    <meta property="og:image" content="/assets/preview.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/preview.png" />
     <link rel="alternate" type="application/rss+xml" title="Software Rewired RSS" href="/rss.xml" />
-    <link rel="icon" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Sora:wght@400;600&display=swap" rel="stylesheet" />
@@ -28,7 +30,11 @@ const url = Astro.url;
     <div class="bg-grid" aria-hidden="true"></div>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="/" aria-label="Software Rewired">Software Rewired</a>
+        <a class="brand" href="/" aria-label="Software Rewired">
+          <img class="logo logo-light" src="/assets/logo.png" alt="Software Rewired" />
+          <img class="logo logo-dark" src="/assets/logo-dark.png" alt="Software Rewired" />
+          <span class="sr-only">Software Rewired</span>
+        </a>
         <div class="nav-right">
           <nav class="nav-links">
             <a href="/">Home</a>
