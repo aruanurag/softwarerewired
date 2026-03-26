@@ -148,6 +148,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"oci-for-solo-entrepreneurship.md": {
+	id: "oci-for-solo-entrepreneurship.md";
+  slug: "oci-for-solo-entrepreneurship";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "serverless-costs.md": {
 	id: "serverless-costs.md";
   slug: "serverless-costs";

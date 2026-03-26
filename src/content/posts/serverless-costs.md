@@ -1,6 +1,6 @@
 ---
 title: "The True Cost of Serverless: What Architects Should Know"
-date: "2026-03-15"
+date: 2026-03-15
 author: "Software Rewired"
 tags: ["Software Architecture", "SaaS", "AI Platforms"]
 summary: "Serverless is freeing, but it's not free. A practical look at billing models and the architecture decisions that drive costs."
