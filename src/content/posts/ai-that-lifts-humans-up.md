@@ -1,6 +1,6 @@
 ---
 title: "AI That Lifts Humans Up"
-date: "2026-03-09"
+date: 2026-03-09
 author: "Anurag Mohan"
 tags: ["AI", "Software Architecture", "AI Platforms"]
 summary: "The best AI makes people stronger, not smaller. A practical look at what the data says and how to build for human lift." 
