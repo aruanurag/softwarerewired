@@ -68,7 +68,7 @@ Let’s say you run 1 million invocations of a 128MB function for 100ms each. Th
 
 Cost is just one piece. Serverless has amazing agility and scale, but it’s not the answer to every problem. Some things to consider:
 
-- **Are your functions short-lived?** Long-running tasks might be cheaper in containers or VMs.
+- **Are your functions short-lived? ** Long-running tasks might be cheaper in containers or VMs.
 - **Can you batch or debounce?** Fewer calls = lower cost.
 - **Do you need high concurrency?** Cold starts and platform limits can hit performance.
 - **Do you control downstream costs?** Serverless might be cheap, but logging, messaging, and storage often aren't.
