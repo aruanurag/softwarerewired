@@ -148,6 +148,20 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"audience-microsaas-founders-and-solo-entrepreneurs-topic-their-main-concerns.md": {
+	id: "audience-microsaas-founders-and-solo-entrepreneurs-topic-their-main-concerns.md";
+  slug: "audience-microsaas-founders-and-solo-entrepreneurs-topic-their-main-concerns";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"comparing-the-latest-airpods-model-versus-the-first-generation-airpods.md": {
+	id: "comparing-the-latest-airpods-model-versus-the-first-generation-airpods.md";
+  slug: "comparing-the-latest-airpods-model-versus-the-first-generation-airpods";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "oci-for-solo-entrepreneurship.md": {
 	id: "oci-for-solo-entrepreneurship.md";
   slug: "oci-for-solo-entrepreneurship";
