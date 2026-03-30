@@ -1,6 +1,6 @@
 ---
 title: "MicroSaaS and Solo Founders: Your Real Concerns (and Why OCI Fits)"
-date: "2026-03-30"
+date: 2026-03-30
 author: "Anurag Mohan"
 tags:
   - OCI
