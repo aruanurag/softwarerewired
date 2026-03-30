@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import { formatDate } from "../utils/formatDate";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout title={frontmatter.title} description={frontmatter.summary}>
   <article class="prose">
-    <p class="meta">{frontmatter.date} · {frontmatter.author}</p>
+    <p class="meta">{formatDate(frontmatter.date)} · {frontmatter.author}</p>
     <h1>{frontmatter.title}</h1>
     <p>{frontmatter.summary}</p>
     <div class="tag-list">

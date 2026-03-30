@@ -1,10 +1,11 @@
 ---
+import { formatDate } from "../utils/formatDate";
 const { post } = Astro.props;
 const slug = post.slug;
 const { title, summary, date, tags } = post.data;
 ---
 <article class="card">
-  <p class="meta">{date}</p>
+  <p class="meta">{formatDate(date)}</p>
   <h3><a href={`/posts/${slug}/`}>{title}</a></h3>
   <p>{summary}</p>
   <div class="tag-list">
