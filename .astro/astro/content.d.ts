@@ -148,9 +148,9 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"oci-for-solo-entrepreneurship.md": {
-	id: "oci-for-solo-entrepreneurship.md";
-  slug: "oci-for-solo-entrepreneurship";
+"oci-for-microsaas-and-solo-founders.md": {
+	id: "oci-for-microsaas-and-solo-founders.md";
+  slug: "oci-for-microsaas-and-solo-founders";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
